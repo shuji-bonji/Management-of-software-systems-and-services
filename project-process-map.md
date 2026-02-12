@@ -30,22 +30,26 @@ flowchart LR
 ## 工程間の関係性と成果物フロー
 
 ```mermaid
-flowchart TD
+flowchart TB
     subgraph PLAN["計画フェーズ"]
+        direction TB
         A1["企画書/ビジネスケース"] --> A2["要件定義書"]
     end
 
     subgraph DESIGN["設計フェーズ"]
+        direction TB
         A2 --> B1["基本設計書"]
         B1 --> B2["詳細設計書"]
     end
 
     subgraph BUILD["構築フェーズ"]
+        direction TB
         B2 --> C1["ソースコード"]
         C1 --> C2["テスト結果報告書"]
     end
 
     subgraph DELIVER["提供フェーズ"]
+        direction TB
         C2 --> D1["リリースノート"]
         D1 --> D2["運用マニュアル"]
     end
@@ -569,10 +573,10 @@ graph LR
 
     subgraph AG["アジャイル（スクラム）"]
         direction LR
-        A1["プロダクト\nバックログ"]
-        A1 --> S1["Sprint 1\n設計→実装→テスト"]
-        A1 --> S2["Sprint 2\n設計→実装→テスト"]
-        A1 --> S3["Sprint 3\n設計→実装→テスト"]
+        A1["プロダクト<br>バックログ"]
+        A1 --> S1["Sprint 1<br>設計→実装→テスト"]
+        A1 --> S2["Sprint 2<br>設計→実装→テスト"]
+        A1 --> S3["Sprint 3<br>設計→実装→テスト"]
         S1 --> R1["リリース"]
         S2 --> R1
         S3 --> R1

@@ -2,35 +2,34 @@
 
 > ソフトウェア・システム・サービスの管理を **9つの視点** から包括的に整理したナレッジベース
 
-| #   | 視点                                 | 中心的な問い                                  | 代表的フレームワーク        | ファイル | 状態     |
-| --- | ------------------------------------ | --------------------------------------------- | --------------------------- | -------- | -------- |
-| 1   | **プロジェクト**                     | どうやって作るか？                            | PMBOK, PRINCE2              | [project-process-map.md](./project-process-map.md) | 作成済み |
-| 2   | **プロダクト**                       | 何を作り、どう育てるか？                      | Lean, Inspired (Cagan)      | [product-lifecycle-map.md](./product-lifecycle-map.md) | 作成済み |
-| 3   | **サービスマネジメント**             | どう安定的にサービスを届け続けるか？          | ITIL 4, ITSM                | [service-management-map.md](./service-management-map.md) | 作成済み |
-| 4   | **SRE / 信頼性エンジニアリング**     | どうシステムの信頼性を担保するか？            | Google SRE, SLI/SLO/SLA     | [sre-reliability-map.md](./sre-reliability-map.md) | 作成済み |
-| 5   | **セキュリティ / コンプライアンス**  | どう安全を守り、法規制に準拠するか？          | ISMS (ISO27001), NIST, SOC2 | [security-compliance-map.md](./security-compliance-map.md) | 作成済み |
-| 6   | **データマネジメント**               | データをどう管理・活用・保護するか？          | DMBOK, データガバナンス     | [data-management-map.md](./data-management-map.md) | 作成済み |
-| 7   | **プラットフォームエンジニアリング** | 開発者体験をどう最適化するか？                | Team Topologies, IDP        | [platform-engineering-map.md](./platform-engineering-map.md) | 作成済み |
-| 8   | **ポートフォリオ / プログラム**      | 複数プロダクト/プロジェクトをどう統括するか？ | SAFe, PfM, PgM              | [portfolio-program-map.md](./portfolio-program-map.md) | 作成済み |
+| #   | 視点                                 | 中心的な問い                                  | 代表的フレームワーク        | ファイル                                                           | 状態     |
+| --- | ------------------------------------ | --------------------------------------------- | --------------------------- | ------------------------------------------------------------------ | -------- |
+| 1   | **プロジェクト**                     | どうやって作るか？                            | PMBOK, PRINCE2              | [project-process-map.md](./project-process-map.md)                 | 作成済み |
+| 2   | **プロダクト**                       | 何を作り、どう育てるか？                      | Lean, Inspired (Cagan)      | [product-lifecycle-map.md](./product-lifecycle-map.md)             | 作成済み |
+| 3   | **サービスマネジメント**             | どう安定的にサービスを届け続けるか？          | ITIL 4, ITSM                | [service-management-map.md](./service-management-map.md)           | 作成済み |
+| 4   | **SRE / 信頼性エンジニアリング**     | どうシステムの信頼性を担保するか？            | Google SRE, SLI/SLO/SLA     | [sre-reliability-map.md](./sre-reliability-map.md)                 | 作成済み |
+| 5   | **セキュリティ / コンプライアンス**  | どう安全を守り、法規制に準拠するか？          | ISMS (ISO27001), NIST, SOC2 | [security-compliance-map.md](./security-compliance-map.md)         | 作成済み |
+| 6   | **データマネジメント**               | データをどう管理・活用・保護するか？          | DMBOK, データガバナンス     | [data-management-map.md](./data-management-map.md)                 | 作成済み |
+| 7   | **プラットフォームエンジニアリング** | 開発者体験をどう最適化するか？                | Team Topologies, IDP        | [platform-engineering-map.md](./platform-engineering-map.md)       | 作成済み |
+| 8   | **ポートフォリオ / プログラム**      | 複数プロダクト/プロジェクトをどう統括するか？ | SAFe, PfM, PgM              | [portfolio-program-map.md](./portfolio-program-map.md)             | 作成済み |
 | 9   | **エンタープライズアーキテクチャ**   | 組織全体のIT構造をどう統制するか？            | TOGAF, Zachman              | [enterprise-architecture-map.md](./enterprise-architecture-map.md) | 作成済み |
-
 
 ## 9つの視点の関係性
 
 ```mermaid
 graph TD
-    EA["9. エンタープライズ\nアーキテクチャ\n組織全体のIT構造を統制"]
-    PFM["8. ポートフォリオ /\nプログラム\n投資の最適配分"]
+    EA["9. エンタープライズ<br>アーキテクチャ<br>組織全体のIT構造を統制"]
+    PFM["8. ポートフォリオ /<br>プログラム<br>投資の最適配分"]
 
-    PJ["1. プロジェクト\nどう作るか"]
-    PD["2. プロダクト\n何を作り育てるか"]
+    PJ["1. プロジェクト<br>どう作るか"]
+    PD["2. プロダクト<br>何を作り育てるか"]
 
-    SM["3. サービス\nマネジメント\n安定的に届ける"]
-    SRE["4. SRE\n信頼性を担保"]
+    SM["3. サービス<br>マネジメント<br>安定的に届ける"]
+    SRE["4. SRE<br>信頼性を担保"]
 
-    SEC["5. セキュリティ /\nコンプライアンス\n安全を守る"]
-    DM["6. データ\nマネジメント\nデータを活用・保護"]
-    PE["7. プラットフォーム\nエンジニアリング\n開発者体験を最適化"]
+    SEC["5. セキュリティ /<br>コンプライアンス<br>安全を守る"]
+    DM["6. データ<br>マネジメント<br>データを活用・保護"]
+    PE["7. プラットフォーム<br>エンジニアリング<br>開発者体験を最適化"]
 
     EA -->|"方針・標準"| PFM
     PFM -->|"投資判断"| PJ
