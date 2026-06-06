@@ -2,17 +2,17 @@
 
 > ソフトウェア・システム・サービスの管理を **9つの視点** から包括的に整理したナレッジベース
 
-| #   | 視点                                 | 中心的な問い                                  | 代表的フレームワーク        | ファイル                                                           | 状態     |
-| --- | ------------------------------------ | --------------------------------------------- | --------------------------- | ------------------------------------------------------------------ | -------- |
-| 1   | **プロジェクト**                     | どうやって作るか？                            | PMBOK, PRINCE2              | [project-process-map.md](./project-process-map.md)                 | 作成済み |
-| 2   | **プロダクト**                       | 何を作り、どう育てるか？                      | Lean, Inspired (Cagan)      | [product-lifecycle-map.md](./product-lifecycle-map.md)             | 作成済み |
-| 3   | **サービスマネジメント**             | どう安定的にサービスを届け続けるか？          | ITIL 4, ITSM                | [service-management-map.md](./service-management-map.md)           | 作成済み |
-| 4   | **SRE / 信頼性エンジニアリング**     | どうシステムの信頼性を担保するか？            | Google SRE, SLI/SLO/SLA     | [sre-reliability-map.md](./sre-reliability-map.md)                 | 作成済み |
-| 5   | **セキュリティ / コンプライアンス**  | どう安全を守り、法規制に準拠するか？          | ISMS (ISO27001), NIST, SOC2 | [security-compliance-map.md](./security-compliance-map.md)         | 作成済み |
-| 6   | **データマネジメント**               | データをどう管理・活用・保護するか？          | DMBOK, データガバナンス     | [data-management-map.md](./data-management-map.md)                 | 作成済み |
-| 7   | **プラットフォームエンジニアリング** | 開発者体験をどう最適化するか？                | Team Topologies, IDP        | [platform-engineering-map.md](./platform-engineering-map.md)       | 作成済み |
-| 8   | **ポートフォリオ / プログラム**      | 複数プロダクト/プロジェクトをどう統括するか？ | SAFe, PfM, PgM              | [portfolio-program-map.md](./portfolio-program-map.md)             | 作成済み |
-| 9   | **エンタープライズアーキテクチャ**   | 組織全体のIT構造をどう統制するか？            | TOGAF, Zachman              | [enterprise-architecture-map.md](./enterprise-architecture-map.md) | 作成済み |
+| #   | 視点                                 | 中心的な問い                                  | 代表的フレームワーク        | ファイル                                                           |
+| --- | ------------------------------------ | --------------------------------------------- | --------------------------- | ------------------------------------------------------------------ |
+| 1   | **プロジェクト**                     | どうやって作るか？                            | PMBOK, PRINCE2              | [project-process-map.md](./project-process-map.md)                 |
+| 2   | **プロダクト**                       | 何を作り、どう育てるか？                      | Lean, Inspired (Cagan)      | [product-lifecycle-map.md](./product-lifecycle-map.md)             |
+| 3   | **サービスマネジメント**             | どう安定的にサービスを届け続けるか？          | ITIL 4, ITSM                | [service-management-map.md](./service-management-map.md)           |
+| 4   | **SRE / 信頼性エンジニアリング**     | どうシステムの信頼性を担保するか？            | Google SRE, SLI/SLO/SLA     | [sre-reliability-map.md](./sre-reliability-map.md)                 |
+| 5   | **セキュリティ / コンプライアンス**  | どう安全を守り、法規制に準拠するか？          | ISMS (ISO27001), NIST, SOC2 | [security-compliance-map.md](./security-compliance-map.md)         |
+| 6   | **データマネジメント**               | データをどう管理・活用・保護するか？          | DMBOK, データガバナンス     | [data-management-map.md](./data-management-map.md)                 |
+| 7   | **プラットフォームエンジニアリング** | 開発者体験をどう最適化するか？                | Team Topologies, IDP        | [platform-engineering-map.md](./platform-engineering-map.md)       |
+| 8   | **ポートフォリオ / プログラム**      | 複数プロダクト/プロジェクトをどう統括するか？ | SAFe, PfM, PgM              | [portfolio-program-map.md](./portfolio-program-map.md)             |
+| 9   | **エンタープライズアーキテクチャ**   | 組織全体のIT構造をどう統制するか？            | TOGAF, Zachman              | [enterprise-architecture-map.md](./enterprise-architecture-map.md) |
 
 ## 9つの視点の関係性
 
@@ -53,6 +53,16 @@ graph TD
     style DM fill:#F39C12,color:#fff
     style PE fill:#8E44AD,color:#fff
 ```
+
+## AI はこの管理にどう関与すべきか
+
+9 つの視点はいずれも、これまで人間が担ってきた管理の体系である。本リポジトリのもう一つの主題は「**これらを AI にどう担わせ、どう関与させるか**」。
+
+その問いに対する出発点は、**立場 (役割・ドメイン) が活用法を決める** ということ。同じ「AI を製品に関与させる」でも、どの立場に立つかで工程・成果物・負荷のかかる管理視点がまったく変わる。
+
+最初の具体例:
+
+- [LLM を使った製品作り — 組み込み系と Web・業務系の違い](./llm-product-development-embedded-vs-web.md) — 境界をまたぐ成果物が「重みファイル」か「API エンドポイント」かで、工程・職能・スケール戦略と、効いてくる管理視点 (機能安全 vs eval 監視、シリコン投資 vs ベンダーロックイン回避) がどう分岐するか
 
 ## 各ドキュメントの構成
 
