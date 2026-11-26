@@ -86,5 +86,5 @@ flowchart TB
 ## 関連
 
 - 管理 9 視点の全体像: [README](./README.md)
-- Skill / MCP / Memory 等のシステム部品の配置 (Step 1: 概念): [ai-agent-architecture](https://shuji-bonji.github.io/ai-agent-architecture/ja/)
+- Skill / MCP / Memory 等のシステム部品の配置 (Step 1: 概念): [ai-agent-architecture](https://github.com/shuji-bonji/ai-agent-architecture/blob/main/README.ja.md)（アーカイブ済み）
 - LLM 本体の構造的制約 (Step 2: 原理): [understanding-llm-through-claude-code](https://shuji-bonji.github.io/understanding-llm-through-claude-code/ja/)
